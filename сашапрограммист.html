@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="jo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  
+</head>
+<body>
+<div class="container-fluid salsa">
+  <nav class="navbar st navbar-expand-sm fixed-top">
+  <a class="navbar-brand text-white kek" href="#">Главная</a>
+  <ul class="navbar-nav">
+    <li class="nav-item kek1">
+      <a class="nav-link text-white" href="#">ПОПУЛЯРНЫЕ СТРАНЫ</a>
+    </li>
+    <li class="nav-item kek2">
+      <a class="nav-link text-white" href="#">БЛА БЛА БЛА</a>
+    </li>
+  </ul>
+</nav>
+
+<br><br><br><br><br><br><br><br><br><br>
+  
+  <div class="container lol text-center text-white">
+      <div class="br">
+      <h2>Выберите вашу страну проживания</span></h2><br>
+        <select name="country" class="custom-select col-md-3" id="bbb">
+            <option selected>выбор страны</option>
+            <option value="1">Россия</option>
+            <option value="2">Рашка</option>
+            <option value="3">Русь</option>
+          </select>
+          <button type="button" class="btn btn-dark" id="bat">Выбрать</button>
+        </div>
+        <p id="c">lulkek</p>
+  </div>
+</div>
+<div class="jumbotron text-center bg-primary" style="margin-bottom:0">
+  <p>Ваня ебик</p>
+</div>
+<script> //  СМЕНА ЦВЕТА ШАПКИ
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100){  
+        $('nav').addClass("sticky");
+    }
+    else{
+        $('nav').removeClass("sticky");
+    }
+});
+</script>
+
+<script> //  ВЫБОР СТРАНЫ
+  $(document).ready(function(){
+      $("#bat").click(function(){
+        if ($("#bbb").val() == 3) {
+            $("#bbb").hide();
+            $("#c").show();
+        }
+    });
+});
+</script>
+</body>
+
+</html>

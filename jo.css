@@ -1,0 +1,38 @@
+.kek {
+  margin-left: 30px;
+}
+
+.kek1 {
+  margin-left: 100px;
+}
+
+.kek2 {
+  margin-left: 30px;
+}
+
+.lol {
+  height: 800px;
+}
+
+.br {
+	margin-top: 70px;
+}
+
+.salsa {
+	background-image: url(goga.jpg);
+}
+
+.st {
+	background-color: transparent;
+	transition: all 0.5s ease;
+}
+
+.sticky {
+	transition: all 1s ease;
+	background-color: blue;
+  }
+
+ #c {
+ 	display: none;
+ }
+
